@@ -12,6 +12,13 @@ public class App {
      pollObj(worker);
      pollObj(drone);
 
+    
+    output("---------------------------------------");
+
+    // Das sollte eigentlich nicht gehen! / HonayBee ist nur eine Abstraktion, existiert eigentlich nicht. Somit sollte Instanziierung nicht möglich sein.
+    
+    HoneyBee bee = new HoneyBee();
+    pollObj(bee);
     }
      
     //  output(queen.doYourJob());
